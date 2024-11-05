@@ -1,0 +1,128 @@
+/**
+ * @Author: wellingtonmigliari
+ * @Date:   2022-11-05T16:57:23+01:00
+ * @Last modified by:   wellingtonmigliari
+ * @Last modified time: 2024-02-04T14:00:01+01:00
+ */
+
+
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+
+
+.container-dash {
+  max-width: 100%;
+  margin-top: 6px;
+}
+
+.col-md-9 {
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-top: 18px;
+  background-color: black;
+}
+
+.col-md-3 {
+  width: 100%;
+}
+
+.row {
+  padding-right:1px;
+  padding-left:1px;
+  margin: 1px;
+  align-items: stretch;
+}
+
+.form-group {
+  margin-bottom: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.form-control {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+label {
+  font-weight: 200;
+}
+
+p {
+  padding-top: 10px;
+  font-weight: 100;
+}
+
+.option {
+  background-color:#446454;
+  color: #fff;
+  z-index:1;
+  transition:background 1s ease-in-out;
+  box-sizing:border-box;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+option:checked {
+  background-color: black;
+  color: #fff;
+}
+
+.option:hover {
+  background-color:#c37159;
+  color: #fff;
+}
+
+.option:focus {
+  background-color:#c37159;
+  color: #fff;
+}
+
+.select:focus .option {
+  position:relative;
+  pointer-events:all;
+}
+
+img {
+  width: 100%;
+  border-style: none;
+  padding-bottom: 20px;
+}
+
+select {
+  background-color: #fff;
+  color: #fff;
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+.size_chart {
+  margin-right: 0px;
+  padding-right: 0px;
+  display: block;
+  width: 100%;
+}
+
+iframe {
+  border-width: 0px 0px 0px 0px;
+  width:100%;
+  height: 750px;
+
+}
+
+
+@media (min-width:541px) and (max-width:1366px) {
+    .about > iframe {
+      width:95%;
+      height: 40vmin;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+}​
