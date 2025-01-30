@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>DAPSR</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- responsive-->
+      <link rel="stylesheet" href="css/style_dashboard.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="images/crisp_logo.png">
+      <script src="https://kit.fontawesome.com/920ba322d1.js" crossorigin="anonymous"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+      <script>
+      $(document).ready(function(){
+          var selectedProduct = getUrlParameter("product");
+          $('sel').val(selectedProduct);
+      });
+
+      function getUrlParameter(sParam){
+
+              var sPageURL = window.location.search.substring(1);
+              var sURLVariables = sPageURL.split('&');
+              for (var i = 0; i < sURLVariables.length; i++)
+              {
+                  var sParameterName = sURLVariables[i].split('=');
+                  if (sParameterName[0] == sParam)
+                  {
+                      return sParameterName[1];
+                  }
+              }
+
+
+      }
+
+      $(document).ready(function(){
+
+        //hides dropdown content
+        $(".size_chart").hide();
+
+        //unhides first option content
+        $("#monster").show();
+
+        //listen to dropdown for change
+        $("#size_select").change(function(){
+          //rehide content on change
+        $('.size_chart').hide();
+          //unhides current item
+        $('#'+$(this).val()).show();
+        });
+
+      });
+      </script>
+
+
+   </head>
+   <!-- body -->
+   <body class="main-layout";>
+     <button onclick="topFunction()" id="myBtn_1" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+      <!-- loader
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loader_crisp.png" alt="" /></div>
+      </div>
+       -->
+      <!-- end loader -->
+
+  <!-- header antigo
+      <div id="mySidepanel" class="sidepanel">
+        <a href="index.html"><img src="images/crisp_logo.png" style="width: 50%;"/></a>
+
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a class="active" href="index.html">início</a>
+         <a href="projeto.html">projeto</a>
+         <a href="dados.html">dados</a>
+         <a href="equipe.html">mapas</a>
+         <a href="estudos.html">estudos</a>
+      </div>
+    header antigo -->
+    <div id="about" class="about" style="padding-top: 0px;">
+      <header>
+
+        <input type="checkbox" id="menyAvPaa">
+    <label id="burger" for="menyAvPaa">
+        <div style="background-color: #c37159;"></div>
+        <div style="background-color: #c37159;"></div>
+        <div style="background-color: #c37159;"></div>
+    </label>
+  <nav id="meny">
+    <ul>
+    <li><a class="active" href="index.html">início</a></li>
+    <li><a href="projeto.html">projeto</a></li>
+    <li><a href="dados.html">dados</a></li>
+    <li><a href="equipe.html">equipe</a></li>
+    <li><a href="estudos.html">publicações</a></li>
+  </ul>
+  </nav>
+      </header>
+
+       <div class="container-fluid" style="background-color: #fff;">
+          <div class="row d_flex">
+            <div class="container-dash" style="padding-bottom: 5%;">
+            <div  class="row">
+            <div class="col-md-3" style="padding: 2%; background-color: #fff;">
+            <div class="row">
+            <div class="duration form-group">
+              <div class="logo" style="width: 100%; padding-top:25px; padding-right: 15px; padding-left: 0px; padding-bottom: 0px;">
+                 <a href="index.html"><img src="images/crisp_logo_novo.png" style="width: 35%;"/></a>
+              </div>
+              <h4 style="color:#5c7c6c;">Visualização de dados</h4>
+              <label></label>
+              <select class="form-control select option" id="size_select" NAME="sel" onChange="split(selected value)">
+                <option disabled selected value> Selecionar variável </option>
+               <option value="monster">Trajetória de vida - Quanti</option>
+                <option value="monster_2">Trajetória de vida - Quali</option>
+               <option value="jellyfish">Violência institucional</option>
+               <option value="nightowl">Violência policial - Quanti</option>
+               <option value="lollipop">Violência policial - Quali</option>
+             </select>
+            </div><!-- END .duration -->
+            </div>
+
+
+            <div class="row">
+              <div id="monster" class="size_chart">
+                <form>
+                   <select class="form-control select option" id="size_select" NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+                     <optgroup label="Aspecto de pobreza">
+                       <option disabled selected value> Selecionar variável </option>
+                       <option value="https://datawrapper.dwcdn.net/qVMKh/19/ ">Cor</option>
+                       <option value="https://datawrapper.dwcdn.net/0YBOv/9/">Sexo</option>
+                       <option value="https://datawrapper.dwcdn.net/ZOnj5/5/">Pais em situação de rua</option>
+                       <option value="https://datawrapper.dwcdn.net/hjoxV/6/">Escolaridade do entrevistado</option>
+                       <option value="https://datawrapper.dwcdn.net/biHGs/5/">Escolaridade do pai</option>
+                       <option value="https://datawrapper.dwcdn.net/7wwHg/4/">Escolaridade da mãe</option>
+                       <option value="https://datawrapper.dwcdn.net/3k3ev/2/">Moradia na infância</option>
+                       <option value="https://datawrapper.dwcdn.net/LieCu/2/">Moradia na adolescência</option>
+                       <option value="https://datawrapper.dwcdn.net/k4PXI/2/">Agressão física</option>
+                       <option value="https://datawrapper.dwcdn.net/xo4FB/3/">Agressão psicológica</option>
+
+
+                     </optgroup>
+                   </select>
+                 </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div id="monster_2" class="size_chart">
+                <form>
+                   <select class="form-control select option" id="size_select" NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+                     <optgroup label="Aspecto de pobreza">
+                       <option disabled selected value> Selecionar variável </option>
+                       <option value="https://datawrapper.dwcdn.net/dXmtE/10/">Acesso à informação</option>
+                       <option value="https://datawrapper.dwcdn.net/yacjE/3/">Hábito de leitura</option>
+                       <option value="https://datawrapper.dwcdn.net/b7xL7/2/">Lazer e tempo livre</option>
+                       <option value="https://datawrapper.dwcdn.net/ilGU3/4/">Línguas estrangeiras</option>
+                     </optgroup>
+                   </select>
+                 </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div id="jellyfish" class="size_chart">
+                <form>
+                   <select class="form-control select option" id="size_select" NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+                     <optgroup label="Aspecto da trajetória">
+                       <option disabled selected value>Selecionar variável</option>
+                       <option value="https://datawrapper.dwcdn.net/D1QGd/3/">Serviços procurados</option>
+                       <option value="https://datawrapper.dwcdn.net/tDTYO/2/">Orientação técnica</option>
+                       <option value="https://datawrapper.dwcdn.net/45QWT/3/">Iniciativa técnica</option>
+                       <option value="https://datawrapper.dwcdn.net/4430U/2/">Atuação técnica</option>
+                       <option value="https://datawrapper.dwcdn.net/2o2L6/3/">Ameaças</option>
+                       <option value="https://datawrapper.dwcdn.net/l4K5C/2/">Retirada de benefícios</option>
+                       <option value="https://datawrapper.dwcdn.net/hSKYN/2/">Cadastro sem documentos</option>
+                       <option value="https://datawrapper.dwcdn.net/QabcQ/2/">Avaliação de serviços</option>
+                       <option value="https://datawrapper.dwcdn.net/u5XAu/2/">Atendimento violento</option>
+                       <option value="https://datawrapper.dwcdn.net/mUEny/2/">Tipo de violência</option>
+                     </optgroup>
+                   </select>
+                 </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div id="nightowl" class="size_chart">
+                <form>
+                   <select class="form-control select option" id="size_select" NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+                     <optgroup label="Aspecto da violência">
+                       <option disabled selected value> Selecionar variável </option>
+                       <option value="https://datawrapper.dwcdn.net/5mZhu/4/">Interação policial</option>
+                       <option value="https://datawrapper.dwcdn.net/oLvo4/3/">Violência física</option>
+                       <option value="https://datawrapper.dwcdn.net/9WUeS/2/">Pertences retirados</option>
+                       <option value="https://datawrapper.dwcdn.net/j9bik/2/">Retirada de crianças</option>
+                     </optgroup>
+                   </select>
+                 </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div id="lollipop" class="size_chart">
+                <form>
+                   <select class="form-control select option" id="size_select" NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+                     <optgroup label="Aspecto da violência">
+                       <option disabled selected value> Selecionar variável </option>
+                       <option value="https://datawrapper.dwcdn.net/7n3Hk/2/">Melhora de serviços</option>
+                       <option value="https://datawrapper.dwcdn.net/FaTDj/2/">Redução da violência</option>
+                       <option value="https://datawrapper.dwcdn.net/xUy2n/2/">Medidas de aperfeiçoamento</option>
+                       <option value="https://datawrapper.dwcdn.net/0LXva/3/">Com a palavra</option>
+                     </optgroup>
+                   </select>
+                 </form>
+              </div>
+            </div>
+
+<!--
+            <div class="row">
+              <div id="eagle" class="size_chart">
+                <form>
+                   <select class="form-control select option" id="size_select" NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+                     <optgroup label="Problemes d'accés i permanència">
+                       <option disabled selected value> Selecionar Município </option>
+                       <option value="https://datawrapper.dwcdn.net/c7XkX/3/">Belo Horizonte</option>
+                       <option value="https://datawrapper.dwcdn.net/c7XkX/3/">Belo Horizonte</option>
+                       <option value="https://datawrapper.dwcdn.net/c7XkX/3/">Belo Horizonte</option>
+                       <option value="https://datawrapper.dwcdn.net/c7XkX/3/">Belo Horizonte</option>
+                       <option value="https://datawrapper.dwcdn.net/c7XkX/3/">Belo Horizonte</option>
+                       <option value="https://datawrapper.dwcdn.net/c7XkX/3/">Belo Horizonte</option>
+                       <option value="https://datawrapper.dwcdn.net/c7XkX/3/">Belo Horizonte</option>
+                     </optgroup>
+                   </select>
+                 </form>
+              </div>
+            </div>
+-->
+
+<!--
+                  <p style="font-weight: 300; color: #aaa08f;">No primeiro seletor, escolha a variável de sua preferência e, logo abaixo, aparecerão as opções
+                    de dados disponíveis a serem visualizados. Torne a selecionar a subvariável de seu
+                    interesse no segundo nível de seleção para ver os gráficos, mapas e tabelas correspondentes ao primeiro nível.
+                    As imagens são interativas. Isso significa que ao passar o cursor sobre elas, você verá etiquetas com inúmeras outras informações.
+                    Utilize os dois botões no canto inferior direito para aumentar e diminuir a escala dos mapas. No caso das tabelas, use as caixas de busca para
+                    filtrar informações.</p>
+-->
+            </div>
+
+            <div class="col-md-9" style="padding: 4%; margin-left: 0px; background-color: #fff;">
+              <iframe name="iframe" id="youriframe" src="https://datawrapper.dwcdn.net/WBSkj/8/" frameBorder="0" style="padding: 0px 0px 0px 0px; background-color: #fff;"></iframe>
+            </div>
+
+
+
+            <div class="col-md-3 text_align_left">
+
+            </div>
+
+            <div class="col-md-4 text_align_left">
+              <p style="font-size: 1.5rem; padding-bottom: 3%; margin-top: 3%;">Microdados</p>
+              <ul>
+                <li style="text-decoration: underline; text-underline-position: under; color: #6c8c7c;"><a class="dados_link" href="documents/microdados_trajetoria.xlsx"><i class="fa fa-regular fa-file-excel fa-1x"></i> Trajetória de vida</a></li>
+                <li style="text-decoration: underline; text-underline-position: under; color: #6c8c7c;"><a class="dados_link" href="documents/microdados_violencia_institucional.xlsx"><i class="fa fa-regular fa-file-excel fa-1x"></i> Violência institucional</a></li>
+                <li style="text-decoration: underline; text-underline-position: under; color: #6c8c7c;"><a class="dados_link" href="documents/microdados_violencia_policial.xlsx"><i class="fa fa-regular fa-file-excel fa-1x"></i> Violência policial</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 text_align_left">
+              <p style="font-size: 1.5rem; padding-bottom: 3%; margin-top: 3%;">Metadados</p>
+              <ul>
+                <li style="text-decoration: underline; text-underline-position: under; color: #6c8c7c;"><a class="dados_link" href="documents/metadados_dapsr_crisp.pdf" download target="_blank"><i class="fa fa-regular fa-file-pdf fa-1x"></i> Variáveis</a></li>
+              </ul>
+            </div>
+        </div>
+</div>
+
+<script>
+var select = document.forms[0].sel;
+select.onchange = function(){
+var value =  select.options[select.selectedIndex].value; // to get Value
+alert(value);
+}
+</script>
+
+
+          </div>
+       </div>
+    </div>
+
+      <!-- end header -->
+      <!-- start slider section -->
+
+
+      <!-- footer -->
+      <script defer src="javascript/footer.js"></script>
+      <div>
+        <div id="footer"></div>
+      </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/custom.js"></script>
+
+      <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn_1");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+   </body>
+</html>

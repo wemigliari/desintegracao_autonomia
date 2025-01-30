@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>DAPSR</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="images/crisp_logo.png">
+      <script src="https://kit.fontawesome.com/920ba322d1.js" crossorigin="anonymous"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <script
+      	src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      	crossorigin="anonymous"></script>
+      <script>
+      	function SubForm (){
+      		$.ajax({
+      			url:"https://script.google.com/macros/s/AKfycbzgkpZ22AHZymgE7xLnDubslQbbuWl-Z80FHyNVXCEZOfvdeLjvvxURNAwRGzm9m2nTLw/exec",
+      			type:"POST",
+      			data:$("#request").serializeArray(),
+      			success: function(){
+      				alert("CRISP/UFMG\nAgradecemos o seu interesse pela nossa newsletter. Em breve, você receberá notícias sobre pesquisa, pubicações e muito mais.")
+      			},
+      			error: function(){
+      				alert("CRISP/UFMG\nAgradecemos o seu interesse pela nossa newsletter.")
+      			}
+      		});
+      	}
+      </script>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+
+     <button onclick="topFunction()" id="myBtn_1" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+      <!-- loader
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loader_crisp.png" alt="" /></div>
+      </div>
+       -->
+      <!-- end loader -->
+
+  <!-- header antigo
+      <div id="mySidepanel" class="sidepanel">
+        <a href="index.html"><img src="images/crisp_logo.png" style="width: 50%;"/></a>
+
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a class="active" href="index.html">início</a>
+         <a href="projeto.html">projeto</a>
+         <a href="dados.html">dados</a>
+         <a href="equipe.html">mapas</a>
+         <a href="estudos.html">estudos</a>
+      </div>
+    header antigo -->
+      <header>
+        <input type="checkbox" id="menyAvPaa">
+          <label id="burger" for="menyAvPaa">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+  <nav id="meny">
+    <ul>
+    <li><a class="active" href="index.html">início</a></li>
+    <li><a href="projeto.html">projeto</a></li>
+    <li><a href="dados.html">dados</a></li>
+    <li><a href="equipe.html">equipe</a></li>
+    <li><a href="estudos.html">publicações</a></li>
+    <!-- <b><a href="index.html" class="language_link">EN</a></b> -->
+  </ul>
+  </nav>
+         <!-- header inner -->
+         <div class="head-top">
+            <div class="container-fluid">
+               <div class="row d_flex">
+                  <div class="col-sm-3">
+                     <div class="logo" style="width: 100%; padding-top:0px; padding-right: 15px; padding-left: 0px; padding-bottom: 0px;">
+                        <a href="index.html"><img src="images/crisp_logo_novo.png" style="width: 35%;"/></a>
+                     </div>
+                  </div>
+                  <!--
+                  <div class="col-sm-9">
+                     <ul class="email text_align_right">
+                       <!--
+                        <li class="d_none"> <a href="javascript:void(0)"><i class="fa fa-brands fa-github" aria-hidden="true"></i>
+                           </a>
+                        </li>
+
+                        <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
+                  -->
+
+
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header -->
+      <!-- start slider section -->
+
+      <div id="top_section" class=" banner_main">
+        <div class="back-video" style="opacity: 0.8;">
+          <video autoplay loop muted plays-inline>
+            <source src="images/bh.mp4" type="video/mp4">
+          </video>
+        </div>
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                 <div class="animated-title">
+                   <div class="text-top">
+                     <div>
+                       <span>desintegração e autonomia</span>
+                     </div>
+                   </div>
+                   <div class="text-bottom">
+                     <div>população em situação de rua no Brasil</div>
+                   </div>
+                 </div>
+                 <!--
+                  <div class="airmic">
+                     <button class="button-49" role="button">projeto</button>
+                  </div>
+                -->
+               </div>
+               <div class="col-md-6">
+                  <div class="mic_img" style="margin-top: 0%;">
+                     <figure><img src="images/bh.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end slider section -->
+      <!-- services -->
+      <div class="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>projeto</h2>
+                     <p>Desintegração e autonomia: o fenômeno da população de rua no Brasil é um projeto de pós-doutorado sediado no Centro de Estudos de Criminalidade e Segurança Pública, Universidade Federal de Minas Gerais.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="service_img text_align_center">
+                     <i><img src="images/objective.png" alt="#"/></i>
+                  </div>
+                  <div class="service_text text_align_center">
+                     <h3>objetivos</h3>
+                     <p>Um dos objetivos da pesquisa é buscar os nexos causais que possam explicar o fenômeno da população de rua no Brasil.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="service_img text_align_center">
+                     <i><img src="images/method.png" alt="#"/></i>
+                  </div>
+                  <div class="service_text text_align_center">
+                     <h3>metodologia</h3>
+                     <p>Por meio de entrevistas semi-estruturadas, métodos quali-quanti, aplicam-se questionários em pontos estratégicos da cidade de Belo Horizonte.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="service_img text_align_center">
+                     <i><img src="images/results.png" alt="#"/></i>
+                  </div>
+                  <div class="service_text text_align_center">
+                     <h3>resultados</h3>
+                     <p>Os resultados da pesquisa são visualizados com o auxílio de gráficos, mapas e tabelas a fim de reduzir a complexidade do fenômeno estudado.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end services -->
+      <!-- about -->
+      <div id="about" class="about" style="background-color: #b0ada8;">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="titlepage text_align_left">
+                     <h2>desintegração e autonomia</h2>
+                     <p>Quando se trata da população em situação de rua, é recorrente que estudos médicos e clínicos recorrerem a supostas causas que relacionam o fenômeno ao alcoolismo, ao uso abusivo de drogas, quadros psicológicos e psquiátricos de alta complexidade, laços familiares fragilizados bem como totalmente interrompidos entre outras variáveis explicativas. Ocorre que, a partir de nossa pesquisa quali-quantitativa, entendemos que nenhuma dessas variáveis pode explicar por si só o fato de pessoas estarem permanentemente nas ruas. É o que a pesquisa busca esclarecer, pois, se há circunstâncias determinantes na trajetória de vida dos afetados que resultam na desintegração social, elas somente podem ser extraídas da escuta.</p>
+                     <a href="projeto.html"><button class="button-49" role="button">projeto</button></a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <figure><img class="img_responsive" src="images/bh_projeto.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+
+      <!-- our_mics -->
+      <div class="our_mics">
+         <div class="container">
+            <div class="row">
+
+              <div class="col-md-10 offset-md-1">
+                 <div class="titlepage text_align_center">
+                    <h2>destaques</h2>
+                    <p>Interaja com os dados qualitativos e quantitativos da pesquisa sobre o fenômeno da população em situação de rua.</p>
+                 </div>
+              </div>
+
+              <div class="col-md-4 text-center animate-box">
+                <div class="product" style="margin-left: 0px; margin-right: 0px;">
+                  <div class="product-grid" style="background-image:url(images/dashboard_4.png);">
+                    <div class="inner">
+                      <p>
+                        <a href="projeto.html" target = "_blank"></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desc-2">
+                    <h3><a href="projeto.html" target = "_blank">Entenda o porquê de estudar a desintegração social e a autonomia do indivíduo a partir de um recorte racial</a></h3>
+                    <span class="price"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 text-center animate-box">
+                <div class="product" style="margin-left: 0px; margin-right: 0px;">
+                  <div class="product-grid" style="background-image:url(images/dashboard_5.jpeg);">
+                    <div class="inner">
+                      <p>
+                        <a href="documents/ENHR_Presentation_August_2024.pdf" target = "_blank"></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desc-2">
+                    <h3><a href="documents/ENHR_Presentation_August_2024.pdf" target = "_blank">Resultados parciais na Conferência da European Network for Housing Research 2024 em Delft, Holanda</a></h3>
+                    <span class="price"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 text-center animate-box">
+                <div class="product" style="margin-left: 0px; margin-right: 0px;">
+                  <div class="product-grid" style="background-image:url(images/dashboard_3.jpeg);">
+                    <div class="inner">
+                      <p>
+                        <a href="dados.html" target="_blank"></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desc-2">
+                    <h3><a href="dados.html" target="_blank">Dados quali-quantitativos sobre o fenômeno da população em situação de rua em Belo Horizonte</a></h3>
+                    <span class="price"></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+         </div>
+      </div>
+      <!-- end our_mics -->
+      <!-- testimonial -->
+      <div class="testimonial">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 offset-md-2">
+                  <div class="titlepage text_align_center">
+                     <h2>com a palavra</h2>
+                     <p>pessoas em situação de rua</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class="col-md-10 offset-md-1">
+                  <div id="testimo" class="carousel slide our_testimonial" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#testimo" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimo" data-slide-to="1"></li>
+                        <li data-target="#testimo" data-slide-to="2"></li>
+                        <li data-target="#testimo" data-slide-to="3"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption posi_in">
+                                 <div class="testomoniam_text">
+                                    <i class="text_align_left d-block"><img  src="images/icon.png" alt="#"/></i>
+                                    <p>Capacitações de funcionários públicos com foco em empatia, direitos humanos e abordagens não-violentas.</p>
+                                    <i class="text_align_right d-block"><img  src="images/icon_right.png" alt="#"/></i>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption posi_in">
+                                 <div class="testomoniam_text">
+                                    <i class="text_align_left d-block"><img  src="images/icon.png" alt="#"/></i>
+                                    <p>Disponibilizar atendimento psicológico e psiquiátrico para pessoas em situação de rua, ajudando a tratar problemas como dependência química e transtornos mentais.</p>
+                                    <i class="text_align_right d-block"><img  src="images/icon_right.png" alt="#"/></i>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption posi_in">
+                                 <div class="testomoniam_text">
+                                    <i class="text_align_left d-block"><img  src="images/icon.png" alt="#"/></i>
+                                    <p>Patrulhas comunitárias, equipes compostas de agentes de segurança, agentes da saúde e assistência social.</p>
+                                    <i class="text_align_right d-block"><img  src="images/icon_right.png" alt="#"/></i>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption posi_in">
+                                 <div class="testomoniam_text">
+                                    <i class="text_align_left d-block"><img  src="images/icon.png" alt="#"/></i>
+                                    <p>O dia que entenderem que as drogas são uma questão de saúde e não de polícia, melhora bastante coisa.</p>
+                                    <i class="text_align_right d-block"><img  src="images/icon_right.png" alt="#"/></i>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#testimo" role="button" data-slide="prev">
+                     <i class="fa fa-angle-left" aria-hidden="true"></i>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#testimo" role="button" data-slide="next">
+                     <i class="fa fa-angle-right" aria-hidden="true"></i>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial -->
+      <!-- contact section -->
+      <div id="newsletter" class="contact left_cross_right">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_left">
+                     <h2>newsletter</h2>
+                     <p>A newsletter do Centro de Estudos de Criminalidade e Segurança Pública divulga mensualmente eventos, artigos e estudos sobre violência e segurança pública.</p>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <form action="obrigado.html" id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input type="email" id="emailField" required name="Email" placeholder="Email" class="contactus form-control"></input>
+                        </div>
+                        <div class="col-md-12">
+                           <button id="myBtn" type="submit" onclick="SubForm()" class="button-49">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact section -->
+      <!-- footer -->
+    <script defer src="javascript/footer.js"></script>
+
+		<div>
+			<div id="footer"></div>
+		</div>
+
+
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/custom.js"></script>
+
+
+  <script>
+  const request = document.getElementById('request');
+  const emailField = document.getElementById('emailField');
+  const myBtn = document.getElementById('myBtn');
+
+  emailField.addEventListener('keyup', function (event) {
+    isValidEmail = emailField.checkValidity();
+
+    if ( isValidEmail ) {
+      myBtn.disabled = false;
+    } else {
+      myBtn.disabled = true;
+    }
+  });
+
+  myBtn.addEventListener('click', function (event) {
+    signUpForm.submit();
+  });
+  </script>
+
+
+  <script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn_1");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+
+   </body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>DAPSR</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="images/crisp_logo.png">
+      <script src="https://kit.fontawesome.com/920ba322d1.js" crossorigin="anonymous"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page" style="background-color: #eae8e4;">
+     <button onclick="topFunction()" id="myBtn_1" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+     <!-- loader
+     <div class="loader_bg">
+        <div class="loader"><img src="images/loader_crisp.png" alt="" /></div>
+     </div>
+      -->
+     <!-- end loader -->
+
+ <!-- header antigo
+     <div id="mySidepanel" class="sidepanel">
+       <a href="index.html"><img src="images/crisp_logo_novo.png" style="width: 50%;"/></a>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="active" href="index.html">início</a>
+        <a href="projeto.html">projeto</a>
+        <a href="dados.html">dados</a>
+        <a href="equipe.html">mapas</a>
+        <a href="estudos.html">estudos</a>
+     </div>
+   header antigo -->
+     <header>
+       <input type="checkbox" id="menyAvPaa">
+   <label id="burger" for="menyAvPaa">
+       <div style="background-color: #ddd9d2;"></div>
+       <div style="background-color: #ddd9d2;"></div>
+       <div style="background-color: #ddd9d2;"></div>
+   </label>
+    <nav id="meny">
+     <ul>
+     <li><a class="active" href="index.html">início</a></li>
+     <li><a href="projeto.html">projeto</a></li>
+     <li><a href="dados.html">dados</a></li>
+     <li><a href="equipe.html">equipe</a></li>
+     <li><a href="estudos.html">publicações</a></li>
+    </ul>
+    </nav>
+        <!-- header inner -->
+        <div class="head-top">
+           <div class="container-fluid">
+              <div class="row d_flex">
+                <div class="col-sm-3">
+                   <div class="logo" style="width: 100%; padding-top:0px; padding-right: 15px; padding-left: 0px; padding-bottom: 0px;">
+                      <a href="index.html"><img src="images/crisp_logo_novo.png" style="width: 35%;"/></a>
+                   </div>
+                </div>
+                 <!--
+                 <div class="col-sm-9">
+                    <ul class="email text_align_right">
+                      <!--
+                       <li class="d_none"> <a href="javascript:void(0)"><i class="fa fa-brands fa-github" aria-hidden="true"></i>
+                          </a>
+                       </li>
+
+                       <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
+                 -->
+
+
+                    </ul>
+                 </div>
+
+              </div>
+           </div>
+        </div>
+     </header>
+      <!-- end header -->
+      <!-- contact section -->
+      <div id="about" class="about">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_left">
+                     <h2 style="color: #4c745c;">formulário 2</h2>
+                        <div class="contact left_cross_right">
+
+                                    <div class="titlepage text_align_left">
+
+                                       <p style="color: #aaa08f; font-size: 20px;">Entrevista estruturada<br>
+                                         Belo Horizonte - MG<br>
+                                         Desintegração e Autonomia: o Fenômeno da População em Situação de Rua no Brasil<br>
+                                         Bloco B – Violência institucional<br>
+                                         <b><a href="formulario11.html">formulário 1</a></b> | <b><a href="formulario3.html">formulário 3</a></b> |
+                                       </p>
+                                    </div>
+                                 </div>
+                                     <form method="post" name="submit-to-google-sheet" class="main_form">
+                                       <!--
+                                       <div>
+                                         <input id="demo" name="Latitude" type="text" required>
+                                         <label>Latitude</label>
+                                       </div>
+                                       <div>
+                                         <input id="demo2" name="Longitude" type="text" required>
+                                         <label>Longitude</label>
+                                       </div>
+                                           -->
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Lugar" list="capitais" placeholder="Lugar" required class="contactus">
+                                         <datalist id="capitais">
+                                           <option value="Praça 7 de setembro"></option>
+                                           <option value="Albergue 1 - São Paulo"></option>
+                                           <option value="Albergue 2 - Tia Branca 1"></option>
+                                           <option value="Albergue 3 - Maria, Maria"></option>
+                                           <option value="Restaurantes populares - Rodoviária (Popular 1)"></option>
+                                           <option value="Restaurantes populares - Hospitais (Popular 2)"></option>
+                                           <option value="Centro Pop (CREAS) - Lagoinha "></option>
+                                           <option value="Centro Pop (CREAS) - Centro Sul"></option>
+                                           <option value="Centro Pop (CREAS) - Leste"></option>
+                                           <option value="Outros equipamentos 1 - Pastoral da população de rua"></option>
+                                           <option value="Outros equipamentos 2 - Posto de Saúde Carlos Chagas"></option>
+                                           <option value="Outros equipamentos 3 - PMP"></option>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="number" id="quantity" name="Documento" placeholder="Documento" required class="contactus" >
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q40" list="quantities" placeholder="Ultimamente, o entrevistado já procurou" required class="contactus">
+                                         <datalist id="quantities">
+                                         <option value="o Centro POP"></option>
+                                         <option value="o CRAS"></option>
+                                         <option value="o Centro Pop e o CRAS"></option>
+                                         <option value="restaurantes"></option>
+                                         <option value="restaurantes e o Centro POP"></option>
+                                         <option value="restaurantes e o CRAS"></option>
+                                         <option value="restaurantes, o Centro POP e o CRAS"></option>
+                                         <option value="albergues"></option>
+                                         <option value="restaurantes e albergues"></option>
+                                         <option value="o Centro Pop e albergues"></option>
+                                         <option value="o CRAS e albergues"></option>
+                                         <option value="restaurantes, o Centro Pop e albergues"></option>
+                                         <option value="restaurantes, o CRAS e albergues"></option>
+                                         <option value="restaurantes, o Centro POP, o CRAS e albergues"></option>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q41" list="quantities1" placeholder="Violência psicológica/psíquica (o técnico nos centros ou CRAS normalmente não é psicólogo nem psiquiatra). Houve" required class="contactus">
+                                         <datalist id="quantities1">
+                                           <option value="orientação à busca de psicólogo"></option>
+                                           <option value="orientação à busca de psiquiatra"></option>
+                                           <option value="orientação à busca de ambos"></option>
+                                           <option value="orientação à busca de clínicas mentais especializadas em internação"></option>
+                                           <option value="orientação à busca de psicólogo/psiquiatra e clínicas de internação"></option>
+                                           <option value="Nenhuma das situações anteriores"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q42" list="quantities2" placeholder="Violência psicológica/psíquica estatal-institucional. O técnico liga/se comunica com clínicas mentais ou polícia sem o seu consentimento?" required class="contactus">
+                                         <datalist id="quantities2">
+                                           <option value="Sim"></option>
+                                           <option value="Não"></option>
+                                           <option value="Nenhuma situação do tipo identificada"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q43" list="quantities3" placeholder="Violência psicológica/psíquica estatal-institucional. O técnico liga/se comunica com psicólogo/psiquiatra/justiça sem o seu consentimento?" required class="contactus">
+                                         <datalist id="quantities3">
+                                           <option value="Sim"></option>
+                                           <option value="Não"></option>
+                                           <option value="Nenhuma situação do tipo identificada"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q44" list="quantities4" placeholder="Violência psicológica/psíquica estatal-institucional. O técnico ameaça sobre perda de benefícios sociais?" required class="contactus">
+                                         <datalist id="quantities4">
+                                           <option value="Sim"></option>
+                                           <option value="Não"></option>
+                                           <option value="Nenhuma situação do tipo identificada"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q45" list="quantities5" placeholder="Violência psicológica/psíquica estatal-institucional. O técnico recomenda retirada parcial/total de benefícios sociais?" required class="contactus">
+                                         <datalist id="quantities5">
+                                           <option value="Sim"></option>
+                                           <option value="Não"></option>
+                                           <option value="Nenhuma situação do tipo identificada"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q46" list="quantities6" placeholder="Violência psicológica/psíquica estatal-institucional. Mesmo sem documentos pessoais, o entrevistado se cadastra e obtém benefícios sociais." required class="contactus">
+                                         <datalist id="quantities6">
+                                           <option value="Sim"></option>
+                                           <option value="Não"></option>
+                                           <option value="Não se aplica"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q47" list="quantities7" placeholder="Considerando nossa conversa até aqui, como você avalia o atendimento nos centros POP RUA ou CRAS?" required class="contactus">
+                                         <datalist id="quantities7">
+                                           <option value="1 - Péssimo e desrespeitoso"></option>
+                                           <option value="2 - Ruim e desrespeitoso"></option>
+                                           <option value="3 - Regular e respeitoso"></option>
+                                           <option value="4 - Satisfatório e respeitoso"></option>
+                                           <option value="5 - Excelente e extremadamente respeitoso"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q48" list="quantities8" placeholder="Na sua opinião, em sua última visita a esses equipamentos, quando ocorreu o atendimento, ele foi violento?" required class="contactus">
+                                         <datalist id="quantities8">
+                                           <option value="Sim"></option>
+                                           <option value="Não"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q49" list="quantities9" placeholder="Durante o atendimento, essa violência foi uma agressão" required class="contactus">
+                                         <datalist id="quantities9">
+                                           <option value="física (empurrões, socos, pontapés etc de segurança)"></option>
+                                           <option value="verbal (insultos, distrato, piadas etc de ténciso ou seguranças)"></option>
+                                           <option value="psicológica (desatenção, ameaças de reclusão em clínicas ou prisão)"></option>
+                                           <option value="física e verbal"></option>
+                                           <option value="física e psicológica"></option>
+                                           <option value="verbal e psicológica"></option>
+                                           <option value="física, verbal e psicológica"></option>
+                                           <option value="O entrevistado não identifica nenhum tipo de violência"></option>
+                                           </datalist>
+                                         </datalist>
+                                       </div>
+
+                                       <a href="#">
+                                         <span></span>
+                                         <span></span>
+                                         <span></span>
+                                         <span></span>
+                                         <button class="button-49" type="submit" disabled>enviar</button>
+                                       </a>
+                                     </form>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+      <!-- end contact section -->
+      <!-- footer -->
+      <script defer src="javascript/footer.js"></script>
+
+      <div>
+        <div id="footer"></div>
+      </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/custom.js"></script>
+
+      <div id="successmsg" hidden><div class="alert alert-success">
+      <br>
+      <strong style="color:white;"></strong>
+      </div></div>
+
+
+      <div id="errormsg" hidden><div class="alert alert-danger">
+      <strong>Error!</strong> There was an error sending your message.
+      </div></div>
+
+
+     <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbygBOXxouiXIvbq5wYZ5mHRXBN3FzM5745gLmJk9YuN0MJsxVubG53-_GSXm2GZPRbneQ/exec'
+         const form = document.forms['submit-to-google-sheet'];
+         const successmsg=document.getElementById('successmsg');
+         const errormsg=document.getElementById('errormsg');
+         form.addEventListener('submit', e => {
+           e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+             .then(response => console.log('Success!', response),
+             //show success message
+             successmsg.hidden=false
+             )
+             .catch(error => errormsg.hidden=false)
+             //show error message
+
+
+             form.reset();
+         })
+
+       </script>
+
+       <script>
+       // Get the button
+       let mybutton = document.getElementById("myBtn_1");
+
+       // When the user scrolls down 20px from the top of the document, show the button
+       window.onscroll = function() {scrollFunction()};
+
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+       </script>
+   </body>
+</html>
