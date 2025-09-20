@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>DAPSR</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="images/crisp_logo.png">
+      <script src="https://kit.fontawesome.com/920ba322d1.js" crossorigin="anonymous"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page" style="background-color: #eae8e4;">
+     <button onclick="topFunction()" id="myBtn_1" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+     <!-- loader
+     <div class="loader_bg">
+        <div class="loader"><img src="images/loader_crisp.png" alt="" /></div>
+     </div>
+      -->
+     <!-- end loader -->
+
+ <!-- header antigo
+     <div id="mySidepanel" class="sidepanel">
+       <a href="index.html"><img src="images/crisp_logo_novo.png" style="width: 50%;"/></a>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="active" href="index.html">início</a>
+        <a href="projeto.html">projeto</a>
+        <a href="dados.html">dados</a>
+        <a href="equipe.html">mapas</a>
+        <a href="estudos.html">estudos</a>
+     </div>
+   header antigo -->
+     <header>
+       <input type="checkbox" id="menyAvPaa">
+   <label id="burger" for="menyAvPaa">
+       <div style="background-color: #ddd9d2;"></div>
+       <div style="background-color: #ddd9d2;"></div>
+       <div style="background-color: #ddd9d2;"></div>
+   </label>
+    <nav id="meny">
+     <ul>
+     <li><a class="active" href="index.html">início</a></li>
+     <li><a href="projeto.html">projeto</a></li>
+     <li><a href="dados.html">dados</a></li>
+     <li><a href="equipe.html">equipe</a></li>
+     <li><a href="estudos.html">publicações</a></li>
+    </ul>
+    </nav>
+        <!-- header inner -->
+        <div class="head-top">
+           <div class="container-fluid">
+              <div class="row d_flex">
+                <div class="col-sm-3">
+                   <div class="logo" style="width: 100%; padding-top:0px; padding-right: 15px; padding-left: 0px; padding-bottom: 0px;">
+                      <a href="index.html"><img src="images/crisp_logo_novo.png" style="width: 35%;"/></a>
+                   </div>
+                </div>
+                 <!--
+                 <div class="col-sm-9">
+                    <ul class="email text_align_right">
+                      <!--
+                       <li class="d_none"> <a href="javascript:void(0)"><i class="fa fa-brands fa-github" aria-hidden="true"></i>
+                          </a>
+                       </li>
+
+                       <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
+                 -->
+
+
+                    </ul>
+                 </div>
+
+              </div>
+           </div>
+        </div>
+     </header>
+      <!-- end header -->
+      <!-- contact section -->
+      <div id="about" class="about">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_left">
+                     <h2 style="color: #4c745c;">formulário 1</h2>
+                        <div class="contact left_cross_right">
+
+                                    <div class="titlepage text_align_left">
+
+                                       <p style="color: #aaa08f; font-size: 20px;">Microdados de perfil<br>
+                                         Belo Horizonte - MG<br>
+                                         Desintegração e Autonomia: o Fenômeno da População em Situação de Rua no Brasil<br>
+                                         Bloco A – Trajetória de vida<br>
+                                         <b><a href="formulario2.html">formulário 2</a></b> | <b><a href="formulario3.html">formulário 3</a></b> |
+                                       </p>
+                                    </div>
+                                 </div>
+                                     <form method="post" name="submit-to-google-sheet" class="main_form">
+                                       <!--
+                                       <div>
+                                         <input id="demo" name="Latitude" type="text" required>
+                                         <label>Latitude</label>
+                                       </div>
+                                       <div>
+                                         <input id="demo2" name="Longitude" type="text" required>
+                                         <label>Longitude</label>
+                                       </div>
+                                           -->
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Lugar" list="capitais" placeholder="Lugar" required class="contactus">
+                                         <datalist id="capitais">
+                                           <option value="Praça 7 de setembro"></option>
+                                           <option value="Albergue 1 - São Paulo"></option>
+                                           <option value="Albergue 2 - Tia Branca 1"></option>
+                                           <option value="Albergue 3 - Maria, Maria"></option>
+                                           <option value="Restaurantes populares - Rodoviária (Popular 1)"></option>
+                                           <option value="Restaurantes populares - Hospitais (Popular 2)"></option>
+                                           <option value="Centro Pop (CREAS) - Lagoinha "></option>
+                                           <option value="Centro Pop (CREAS) - Centro Sul"></option>
+                                           <option value="Centro Pop (CREAS) - Leste"></option>
+                                           <option value="Outros equipamentos 1 - Pastoral da população de rua"></option>
+                                           <option value="Outros equipamentos 2 - Posto de Saúde Carlos Chagas"></option>
+                                           <option value="Outros equipamentos 3 - PMP"></option>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="number" id="quantity" name="Documento" placeholder="Documento" required class="contactus" >
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q1" list="quantities" placeholder="Você se vê como uma pessoa" required class="contactus">
+                                         <datalist id="quantities">
+                                         <option value="Preta"></option>
+                                         <option value="Parda"></option>
+                                         <option value="Branca"></option>
+                                         <option value="Amarela"></option>
+                                         <option value="Indígena"></option>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q2" list="quantities1" placeholder="Você se vê como uma pessoa (do sexo)" required class="contactus">
+                                         <datalist id="quantities1">
+                                           <option value="Masculino"></option>
+                                           <option value="Feminino"></option>
+                                           <option value="Não binária"></option>
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q3" placeholder="Origem. Ano e onde você nasceu?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q4" placeholder="Origem. O que os seus pais ou responsáveis faziam? Ocupação?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q5" list="quantities2" placeholder="Origem. Seus pais ou responsáveis eram brancos, pretos, pardos, amarelos, indígenas?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q6" list="quantities33" placeholder="Origem. Qual religião era praticada ou assumida por seus pais ou responsáveis? Isso mudou ao longo do tempo?" required class="contactus">
+                                       </div>
+
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q7" list="quantities5" placeholder="Origem. Como era a moradia em que você cresceu? De que material? Quantos cômodos? Havia banheiro? Privacidade?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q8" list="quantities6" placeholder="Origem. Em que cidade ficava?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q9" list="quantities8" placeholder="Origem. Seus pais estiveram em algum momento em situação de rua?" required class="contactus">
+                                         <datalist id="quantities8">
+                                         <option value="Sim">
+                                         <option value="Não">
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q10" placeholder="Origem. Perto de onde você morava, havia comércio, lojas, bancos, restaurantes, farmácias? Faltava algo?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q11" list="quantities12" placeholder="Origem. Havia bibliotecas, centros culturais, praças?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q12" placeholder="Origem. Havia rede de esgoto?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q13" placeholder="Origem. Como e onde eram os encontros com parentes, amigos e conhecidos. Havia um lugar específico? Um dia específico?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q14" list="quantities13" placeholder="Origem e capital cultural. Como você se informava? Aprendia a ler e a escrever na infância e na adolescência?" required class="contactus">
+                                         <datalist id="quantities13">
+                                         <option value="Aprendia o que me passavam na escola">
+                                         <option value="Aprendia o que me passavam na escola e ouvia rádio">
+                                         <option value="Aprendia o que me passavam na escola e via televisão">
+                                         <option value="Aprendia o que me passavam na escola, ouvia rádio e via televisão">
+                                         <option value="Aprendi a ler e a escrever fora da escola.">
+                                         </datalist>
+                                       </div>
+
+
+                                      <div>
+                                        <input type="text" id="quantity" name="Q15" list="quantities133" placeholder="Origem e capital cultural. Anotar tipo de leitura se for o caso." required class="contactus">
+                                      </div>
+
+                                     <div>
+                                       <input type="text" id="quantity" name="Q16" list="quantities134" placeholder="Origem e capital cultural. Anotar que tipo de programa e desenho se for o caso." required class="contactus">
+                                     </div>
+
+                                     <div>
+                                       <input type="text" id="quantity" name="Q17" list="quantities135" placeholder="Origem e capital cultural. Anotar idiomas se for o caso." required class="contactus">
+                                     </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q18" list="quantities15" placeholder="Origem e capital cultural. Você cursou" required class="contactus">
+                                         <datalist id="quantities15">
+                                         <option value="Ensino Fundamental">
+                                         <option value="Fundamental incompleto">
+                                         <option value="Ensino Médio">
+                                         <option value="Ensino Médio incompleto">
+                                         <option value="Superior/Superior Técnico">
+                                         <option value="Superior/Técnico incompleto">
+                                         <option value="Não sabe nem ler nem escrever">
+                                         </datalist>
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q19" list="quantities16" placeholder="Origem e capital cultural. Seu pai cursou" required class="contactus">
+                                         <datalist id="quantities16">
+                                         <option value="Ensino Fundamental">
+                                         <option value="Fundamental incompleto">
+                                         <option value="Ensino Médio">
+                                         <option value="Ensino Médio incompleto">
+                                         <option value="Superior/Superior Técnico">
+                                         <option value="Superior/Técnico incompleto">
+                                         <option value="Não sabe nem ler nem escrever">
+                                         </datalist>
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q20" list="quantities16" placeholder="Origem e capital cultural. Sua mãe cursou" required class="contactus">
+                                         <datalist id="quantities16">
+                                         <option value="Ensino Fundamental">
+                                         <option value="Fundamental incompleto">
+                                         <option value="Ensino Médio">
+                                         <option value="Ensino Médio incompleto">
+                                         <option value="Superior/Superior Técnico">
+                                         <option value="Superior/Técnico incompleto">
+                                         <option value="Não sabe nem ler nem escrever">
+                                         </datalist>
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q21" placeholder="Origem e capital cultural. O que você pensava sobre trabalho e dinheiro na adolescência foi exatamente o que você encontrou na vida adulta? Fale um pouco sobre isso, por favor." required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q22" list="quantities17" placeholder="Moradia. Quando criança morei/ficava" required class="contactus">
+                                         <datalist id="quantities17">
+                                         <option value="na casa de meus pais">
+                                         <option value="na casa de meus avós">
+                                         <option value="na casa de meus irmãos">
+                                         <option value="na casa de meus pais, avós e irmãos">
+                                         <option value="com amigos enquanto meus pais/responsáveis trabalhavam">
+                                         <option value="com parentes enquanto meus pais/responsáveis trabalhavam">
+                                         <option value="em orfanatos">
+                                         <option value="em pensões, hotéis ou lugar cedido">
+                                         <option value="nas ruas">
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q23" list="quantities18" placeholder="Moradia. Quando adolescente morei/ficava" required class="contactus">
+                                         <datalist id="quantities18">
+                                         <option value="na casa de meus pais">
+                                         <option value="na casa de meus avós">
+                                         <option value="na casa de meus irmãos">
+                                         <option value="na casa de meus pais, avós e irmãos">
+                                         <option value="com amigos enquanto meus pais/responsáveis trabalhavam">
+                                         <option value="com parentes enquanto meus pais/responsáveis trabalhavam">
+                                         <option value="em orfanatos">
+                                         <option value="em pensões, hotéis ou lugar cedido">
+                                         <option value="nas ruas">
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q24" placeholder="Tempo livre. O que você fazia em seu tempo livre quando criança?" required class="contactus">
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q25" placeholder="Tempo livre. O que você fazia em seu tempo livre quando adolescente?" required class="contactus">
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q26" placeholder="Tempo livre. O que os seus pais/responsáveis faziam no tempo livre deles?" required class="contactus">
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q27" placeholder="Tempo livre. O que os seus avós/responsáveis faziam no tempo livre deles?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q28" list="quantities19" placeholder="Relações interpessoais, núcleo familiar. Você presenciava cenas de agressão física em ambiente familiar entre os adultos?" required class="contactus">
+                                         <datalist id="quantities19">
+                                         <option value="Sim, entre meus pais">
+                                         <option value="Sim, entre meus pais e meus irmãos">
+                                         <option value="Sim, entre meus irmãos">
+                                         <option value="Sim, entre mim e meus irmãos">
+                                         <option value="Sim, entre mim e meus pais">
+                                         <option value="Sim, entre outros familiares adultos no meu entorno">
+                                         <option value="Nunca presenciei cenas de agressão física enquanto criança">
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q29" list="quantities199" placeholder="Relações interpessoais, núcleo familiar. Se sim, pode descrever?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q30" list="quantities21" placeholder="Relações interpessoais, núcleo familiar. Você presenciava cenas de agressão psicológica em ambiente familiar entre os adultos?" required class="contactus">
+                                         <datalist id="quantities21">
+                                           <option value="Sim, entre meus pais">
+                                           <option value="Sim, entre meus pais e meus irmãos">
+                                           <option value="Sim, entre meus irmãos">
+                                           <option value="Sim, entre mim e meus irmãos">
+                                           <option value="Sim, entre mim e meus pais">
+                                           <option value="Sim, entre outros familiares adultos no meu entorno">
+                                           <option value="Nunca presenciei cenas de agressão psicológica enquanto criança">
+                                         </datalist>
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q31" list="quantities211" placeholder="Relações interpessoais, núcleo familiar. Se sim, pode descrever?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q32" placeholder="Relações interpessoais. Qual a memória mais negativa que você tem desde que era criança?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q33" placeholder="Relações interpessoais, núcleo familiar. Qual a memória mais negativa que você tem desde que era adolescente?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q34" placeholder="Relações interpessoais, núcleo familiar. Qual a sua primeira memória de afeto/carinho quando criança?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q35" placeholder="Relações interpessoais, núcleo familiar. Qual a memória mais marcante de afeto/carinho quando adolescente?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q36" placeholder="Relações interpessoais, núcleo familiar. Hoje, como você resolve conflitos/dívidas envolvendo familiares? Expõe o problema, por exemplo, e diz o que está incomodando?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q37" placeholder="Relações interpessoais, núcleo familiar. Hoje, como você resolve conflitos/dívidas envolvendo amigos? Expõe o problema, por exemplo, e diz o que está incomodando?" required class="contactus">
+                                       </div>
+
+                                       <div>
+                                         <input type="text" id="quantity" name="Q38" placeholder="Criminalidade. Pensando nos últimos meses, você foi vítima de furto, roubo ou assalto?" required class="contactus">
+                                       </div>
+                                       <div>
+                                         <input type="text" id="quantity" name="Q39" placeholder="Criminalidade. Pensando nos últimos meses, você foi vítima de ameaça, agressão, ofensa sexual, racismo, discriminação etc? Se sim, quantas vezes?" required class="contactus">
+                                       </div>
+                                   <!--
+                                   <!--
+                                       <a href="#">
+                                         <button onclick="getLocation()">Localizar</button>
+                                       </a>
+                                   -->
+                                       <a href="#">
+                                         <span></span>
+                                         <span></span>
+                                         <span></span>
+                                         <span></span>
+                                         <button class="button-49" type="submit" disabled>enviar</button>
+                                       </a>
+                                     </form>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+      <!-- end contact section -->
+      <!-- footer -->
+      <script defer src="javascript/footer.js"></script>
+
+      <div>
+        <div id="footer"></div>
+      </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/custom.js"></script>
+
+      <div id="successmsg" hidden><div class="alert alert-success">
+      <br>
+      <strong style="color:white;"></strong>
+      </div></div>
+
+
+      <div id="errormsg" hidden><div class="alert alert-danger">
+      <strong>Error!</strong> There was an error sending your message.
+      </div></div>
+
+
+     <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbxWJ5r1PcmByhv-JNfo2IIw4Hx1_EIdc_y7KA0QVHYTXfPF78wcyleLFfufGAn9ezknZg/exec'
+         const form = document.forms['submit-to-google-sheet'];
+         const successmsg=document.getElementById('successmsg');
+         const errormsg=document.getElementById('errormsg');
+         form.addEventListener('submit', e => {
+           e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+             .then(response => console.log('Success!', response),
+             //show success message
+             successmsg.hidden=false
+             )
+             .catch(error => errormsg.hidden=false)
+             //show error message
+
+
+             form.reset();
+         })
+
+       </script>
+
+       <script>
+       // Get the button
+       let mybutton = document.getElementById("myBtn_1");
+
+       // When the user scrolls down 20px from the top of the document, show the button
+       window.onscroll = function() {scrollFunction()};
+
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+       </script>
+   </body>
+</html>

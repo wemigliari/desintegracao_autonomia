@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>DAPSR</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="images/crisp_logo.png">
+      <script src="https://kit.fontawesome.com/920ba322d1.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/920ba322d1.js" crossorigin="anonymous"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+     <!-- loader
+     <div class="loader_bg">
+        <div class="loader"><img src="images/loader_crisp.png" alt="" /></div>
+     </div>
+      -->
+     <!-- end loader -->
+
+ <!-- header antigo
+     <div id="mySidepanel" class="sidepanel">
+       <a href="index.html"><img src="images/crisp_logo_novo.png" style="width: 50%;"/></a>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="active" href="index.html">início</a>
+        <a href="projeto.html">projeto</a>
+        <a href="dados.html">dados</a>
+        <a href="equipe.html">mapas</a>
+        <a href="estudos.html">estudos</a>
+     </div>
+   header antigo -->
+     <header>
+
+       <input type="checkbox" id="menyAvPaa">
+   <label id="burger" for="menyAvPaa">
+       <div></div>
+       <div></div>
+       <div></div>
+   </label>
+   <nav id="meny">
+     <ul>
+     <li><a class="active" href="index.html">início</a></li>
+     <li><a href="projeto.html">projeto</a></li>
+     <li><a href="dados.html">dados</a></li>
+     <li><a href="equipe.html">equipe</a></li>
+     <li><a href="estudos.html">publicações</a></li>
+   </ul>
+   </nav>
+        <!-- header inner -->
+        <div class="head-top">
+           <div class="container-fluid">
+              <div class="row d_flex">
+                 <div class="col-sm-3">
+                    <div class="logo" style="width: 100%; padding-top:0px; padding-right: 15px; padding-left: 0px; padding-bottom: 0px;">
+                       <a href="index.html"><img src="images/crisp_logo_novo.png" style="width: 35%;"/></a>
+                    </div>
+                 </div>
+                 <!--
+                 <div class="col-sm-9">
+                    <ul class="email text_align_right">
+                      <!--
+                       <li class="d_none"> <a href="javascript:void(0)"><i class="fa fa-brands fa-github" aria-hidden="true"></i>
+                          </a>
+                       </li>
+
+                       <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
+                 -->
+
+
+                    </ul>
+                 </div>
+
+              </div>
+           </div>
+        </div>
+     </header>
+      <!-- end header -->
+      <!-- contact section -->
+      <div class="contact left_cross_right">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2 style="padding-top: 10%;">obrigado</h2>
+                     <p>Seu e-mail foi cadastrado com sucesso. Se decidir parar de receber nossa Newsletter, envie um e-mail a <a href="mailto:wemigliari@gmail.com">wemigliari@gmail.com</a>.</p>
+                   <br>
+                   <p><a href="index.html">Clique aquí para retornar à página inicial</a>.</p>
+                </div>
+                  </div>
+               </div>
+               <div class="col-md-12 text_align_center">
+
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact section -->
+      <!-- footer -->
+      <script defer src="javascript/footer.js"></script>
+
+      <div>
+        <div id="footer"></div>
+      </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/custom.js"></script>
+
+
+
+         <script>
+             const scriptURL = 'https://script.google.com/macros/s/AKfycbxWJ5r1PcmByhv-JNfo2IIw4Hx1_EIdc_y7KA0QVHYTXfPF78wcyleLFfufGAn9ezknZg/exec'
+             const form = document.forms['submit-to-google-sheet'];
+             const successmsg=document.getElementById('successmsg');
+             const errormsg=document.getElementById('errormsg');
+             form.addEventListener('submit', e => {
+               e.preventDefault()
+               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                 .then(response => console.log('Success!', response),
+                 //show success message
+                 successmsg.hidden=false
+                 )
+                 .catch(error => errormsg.hidden=false)
+                 //show error message
+
+
+                 form.reset();
+             })
+
+           </script>
+
+   </body>
+</html>
